@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000C0C0C"
+
+    android:divider="@color/colorPrimary"
+
+    android:dividerPadding="40dp"
+    android:orientation="horizontal"
+    android:padding="10dip"
+    android:showDividers="middle"
+    android:stretchColumns="*"
+    tools:context=".ui.main.Fragment1">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimary"
+        android:showDividers="middle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/section_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALTITUDE"
+                android:textColor="#9D9FAD"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="2dp"
+                android:background="#FF9800" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mAlt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2300"
+                    android:textColor="#F7F7F8"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/textUnits1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" feet"
+                    android:textColor="#FF9800" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/section_label2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AIS"
+                android:textColor="#9D9FAD"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="2dp"
+                android:layout_weight="0"
+                android:background="#FF9800" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mAIS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23"
+                    android:textColor="#F8F7F6"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/textUnits2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" MPH     "
+                    android:textColor="#FF9800" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimary"
+        android:showDividers="middle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/section_label3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENGINE"
+                android:textColor="#9D9FAD"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="2dp"
+                android:background="#FF9800" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mRPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1970"
+                    android:textColor="#F8F7F6"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/textUnits3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="rpm"
+                    android:textColor="#FF9800" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/section_label4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POWER"
+                android:textColor="#9D9FAD"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="180dp"
+                android:layout_height="2dp"
+                android:background="#FF9800" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mWatts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1200"
+                    android:textColor="#F8F7F6"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/textUnits4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WATTS"
+                    android:textColor="#FF9800" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="420dp"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/battery_temp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="BATTERY TEMP"
+                android:textColor="#027017"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/engine_temp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="ENGINE TEMP"
+                android:textColor="#FFEB3B"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/battery_low"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="BATTERY LOW"
+                android:textColor="#E91E63"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </TableRow>
+
+</TableLayout>
